@@ -92,6 +92,11 @@
         height: 48px;
         margin: 0 auto;
         background: #3eb76b;
+        transition: all .5s;
+    }
+    a.learMore:hover{
+        border-radius: 0; 
+        text-shadow: #000 1px 1px 1px; 
     }
     .water div{
         background: rgba(255,255,255,.4);
