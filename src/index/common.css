@@ -163,6 +163,9 @@ a {
   color: #556677;
   text-decoration: none;
 }
+a:hover,a:active,a:link {
+  color: inherit;
+}
 .tl {
   text-align: left;
 }
@@ -406,4 +409,6 @@ i{
 .clear{
   clear: both;
 }
-
+body,html{
+  height: 100%;
+}
