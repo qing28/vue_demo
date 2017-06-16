@@ -13,7 +13,8 @@
                 <div class="bitWater mt10"></div>
             </div>
             <div class="tc mt20">
-                <router-link :to="'/more'" class="btn learMore">Learn More...</router-link>
+                <a class="btn learMore" @click="more">Learn More...</a>
+                <!-- <router-link :to="'/more'" class="btn learMore" @click="more">Learn More...</router-link> -->
             </div>
         </div>
          
@@ -33,10 +34,15 @@
                 console.log(1)
             },
             bb () {
-                this.$http.post('/',{}).then(function (res) {
-                    console.log(this.tt);
-                }).catch(function (res) {
-                    console.log(this.tt,res);
+                // this.$http.post('/',{}).then(function (res) {
+                //     console.log(this.tt);
+                // }).catch(function (res) {
+                //     console.log(this.tt,res);
+                // })
+            },
+            more () {
+                this.$http.get('http://127.0.0.1:9999',{name:123}).then(res=>{
+                    console.log(res);
                 })
             }
         },
